@@ -25,7 +25,7 @@ if mountpoint -q $MPOINT ; then
     echo "$MPOINT already mounted"
 else
     echo "Mounting $MPOINT"
-    /usr/bin/plexdrive $MPOINT \
+    /usr/bin/plexdrive mount $MPOINT \
                        -o allow_other \
                        -v 2 &>>$LOGFILE &
 fi
